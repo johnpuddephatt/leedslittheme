@@ -1,13 +1,14 @@
 {
-  "app.js": "js/app.js",
-  "editor.js": "js/editor.js",
-  "runtime.js": "js/runtime.js",
-  "images/bg.jpg": "images/bg.jpg",
-  "fonts/LLF-serif.woff2": "fonts/LLF-serif.woff2",
-  "fonts/LLF-sans.woff2": "fonts/LLF-sans.woff2",
+  "app.css": "css/app.2720a2.css",
+  "app.js": "js/app.92d167.js",
+  "editor.css": "css/editor.2e2f16.css",
+  "editor.js": "js/editor.eabed1.js",
+  "runtime.js": "js/runtime.b3d092.js",
+  "images/bg.jpg": "images/bg.96345b.jpg",
+  "fonts/LLF-serif.woff2": "fonts/LLF-serif.274e4a.woff2",
+  "fonts/LLF-sans.woff2": "fonts/LLF-sans.e53596.woff2",
   "../theme.json": "../theme.json",
-  "images/cutout-2.svg": "images/cutout-2.svg",
-  "images/cutout-1.svg": "images/cutout-1.svg",
-  "hmr.json": "hmr.json",
+  "images/cutout-2.svg": "images/cutout-2.9eaa02.svg",
+  "images/cutout-1.svg": "images/cutout-1.6df9dc.svg",
   "entrypoints.json": "entrypoints.json"
 }
