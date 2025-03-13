@@ -1,0 +1,178 @@
+{
+  "__generated__": "⚠️ This file is generated. Do not edit.",
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "border": {
+      "radius": false,
+      "customRadius": false,
+      "shadow": false,
+      "color": false,
+      "style": false,
+      "width": false
+    },
+    "background": {
+      "backgroundImage": true
+    },
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "duotone": [],
+      "palette": [
+        {
+          "color": "transparent",
+          "name": "Transparent",
+          "slug": "transparent"
+        },
+        {
+          "color": "#ffffff",
+          "name": "White",
+          "slug": "white"
+        },
+        {
+          "color": "#000000",
+          "name": "Black",
+          "slug": "black"
+        },
+        {
+          "color": "#232323",
+          "name": "Gray",
+          "slug": "gray"
+        },
+        {
+          "color": "#0079cc",
+          "name": "Blue",
+          "slug": "blue"
+        },
+        {
+          "color": "#ff7ce4",
+          "name": "Pink",
+          "slug": "pink"
+        },
+        {
+          "color": "#86b4db",
+          "name": "Blue-light",
+          "slug": "blue-light"
+        },
+        {
+          "color": "#fdf4fc",
+          "name": "Pink-light",
+          "slug": "pink-light"
+        }
+      ]
+    },
+    "button": {
+      "custom": false,
+      "spacing": {},
+      "typography": {}
+    },
+    "layout": {
+      "contentSize": "768px",
+      "wideSize": "1100px"
+    },
+    "custom": {
+      "spacing": {},
+      "typography": {
+        "font-size": {},
+        "line-height": {}
+      }
+    },
+    "spacing": {
+      "padding": false,
+      "units": [
+        "px",
+        "%",
+        "em",
+        "rem",
+        "vw",
+        "vh"
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "fontFamilies": [
+        {
+          "fontFamily": "LLF-sans,Avenir,Helvetica Neue,Helvetica,Arial,sans-serif",
+          "name": "LLF-sans",
+          "slug": "sans"
+        },
+        {
+          "fontFamily": "LLF-serif,Georgia,Cambria,Times New Roman,Times,serif",
+          "name": "LLF-serif",
+          "slug": "serif"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "xs",
+          "size": "0.75rem",
+          "slug": "xs"
+        },
+        {
+          "name": "sm",
+          "size": "0.875rem",
+          "slug": "sm"
+        },
+        {
+          "name": "base",
+          "size": "1rem",
+          "slug": "base"
+        },
+        {
+          "name": "lg",
+          "size": "1.125rem",
+          "slug": "lg"
+        },
+        {
+          "name": "xl",
+          "size": "1.25rem",
+          "slug": "xl"
+        },
+        {
+          "name": "2xl",
+          "size": "1.5rem",
+          "slug": "2xl"
+        },
+        {
+          "name": "3xl",
+          "size": "1.875rem",
+          "slug": "3xl"
+        },
+        {
+          "name": "4xl",
+          "size": "2.25rem",
+          "slug": "4xl"
+        },
+        {
+          "name": "5xl",
+          "size": "3rem",
+          "slug": "5xl"
+        },
+        {
+          "name": "6xl",
+          "size": "3.75rem",
+          "slug": "6xl"
+        },
+        {
+          "name": "7xl",
+          "size": "4.5rem",
+          "slug": "7xl"
+        },
+        {
+          "name": "8xl",
+          "size": "6rem",
+          "slug": "8xl"
+        },
+        {
+          "name": "9xl",
+          "size": "8rem",
+          "slug": "9xl"
+        }
+      ]
+    }
+  }
+}

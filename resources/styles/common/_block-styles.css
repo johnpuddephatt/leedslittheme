@@ -1,0 +1,176 @@
+.wp-block {
+  max-width: var(--wp--style--global--content-size);
+}
+
+.page-template-template-fullwidth .page-content > h2,
+.page-template-template-fullwidth .page-content > h3,
+.page-template-template-fullwidth .page-content > h4,
+.page-template-template-fullwidth .page-content > h5,
+.page-template-template-fullwidth .page-content > h6,
+.page-template-template-fullwidth .page-content > p,
+.page-template-template-fullwidth .page-content > ul,
+.page-template-template-fullwidth .page-content > ol {
+  @apply px-4 md:px-0;
+}
+
+.page-content iframe[src*='youtube.com'],
+.page-content iframe[src*='youtube-nocookie.com'],
+.page-content iframe[src*='vimeo.com'] {
+  @apply aspect-video h-auto w-full rounded-2xl;
+}
+
+.page-content > *:last-child {
+  @apply mb-0;
+}
+
+.prose > h1,
+h1.wp-block-heading {
+  @apply type-xl;
+}
+
+.prose > h2,
+h2.wp-block-heading {
+  @apply type-lg;
+}
+
+.prose > h3,
+h3.wp-block-heading {
+  @apply type-md;
+}
+
+.prose .group:first-child h2 {
+  @apply mt-4;
+}
+
+.wp-block-button .wp-block-button__link {
+  @apply border-2 rounded px-4 py-2 bg-transparent text-black font-semibold;
+}
+
+.wp-block-hero .wp-block-buttons {
+  @apply mt-8;
+}
+
+p.is-style-large {
+  @apply type-md mb-2;
+}
+
+.wp-block-quote {
+  @apply text-xl lg:text-2xl;
+}
+
+.wp-block-quote p {
+  @apply font-bold  !leading-snug !not-italic mb-3;
+  font-size: 1em !important;
+}
+
+.wp-block-quote {
+  @apply !my-12  !leading-tight !border-l-0;
+  padding-left: 1.5em !important;
+}
+
+.wp-block-quote::before {
+  content: '';
+  display: block;
+  margin-left: -1.5em;
+  width: 1.25em;
+  height: 1.25em;
+  float: left;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.58 13.85"><ellipse fill="rgb(255,206,155)" cx="7.29" cy="6.48"  rx="7.29" ry="6.48"/><path fill="rgb(255,206,155)" d="M12.8 10.69s-.63 1.64.2 2.25-1.09 1.18-1.83.77c-.57-.31-2.1-.97-2.1-.97l3.73-2.05Z"/></svg>');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wp-block-quote cite {
+  @apply !not-italic text-right text-lg font-semibold;
+}
+
+.wp-block-quote.has-background {
+  @apply pt-0.5 my-8 p-6 border-l;
+}
+
+.wp-block-quote.is-style-large {
+  @apply !my-20 text-3xl lg:text-4xl;
+}
+
+.wp-block-quote.is-style-large p {
+  @apply !leading-snug;
+}
+
+.wp-block-quote.is-style-large cite {
+  @apply text-xl;
+}
+
+.wp-block-group.has-background {
+  @apply p-6 my-12 md:my-16 md:p-8 rounded;
+}
+
+details {
+  @apply p-4 pb-0  overflow-hidden border rounded  mb-4;
+}
+
+details[open] {
+  @apply !border  pb-4;
+}
+
+details[open] .open\:rotate-90 {
+  @apply transform rotate-90;
+}
+
+summary {
+  @apply list-none type-md relative -mx-4 pr-12 -mt-4 transition  py-6 px-6 cursor-pointer;
+  @apply text-base !important;
+}
+
+summary::marker {
+  @apply hidden;
+}
+
+details summary::after {
+  @apply mx-auto absolute bg-white bg-opacity-60 right-4  -translate-y-1/2 top-1/2 size-10 block rounded-full p-1;
+
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgba(1,105,125)" ><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>');
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+}
+
+.wp-block-people-list details summary::after {
+  @apply right-6 md:right-8 p-2 size-14;
+  background-size: 2rem;
+}
+
+details summary:hover::after {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+details[open] summary::after {
+  background-color: rgba(255, 255, 255, 0.85);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgba(1,105,125)" >  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" /></svg>');
+}
+
+details[open] summary {
+  @apply border-b;
+}
+
+summary:hover {
+  /* @apply border-blue; */
+}
+
+.wp-block-table table {
+  @apply border-collapse border-white;
+}
+
+.wp-block-table table.has-blue-background-color th {
+  @apply text-white;
+}
+
+.wp-block-table td,
+.wp-block-table th {
+  @apply border-white border-8  px-4 py-2 bg-white bg-opacity-70;
+}
+
+.wp-block-table th {
+  @apply bg-opacity-0;
+}

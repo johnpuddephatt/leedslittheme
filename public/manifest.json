@@ -1,0 +1,13 @@
+{
+  "app.js": "js/app.js",
+  "editor.js": "js/editor.js",
+  "runtime.js": "js/runtime.js",
+  "images/bg.jpg": "images/bg.jpg",
+  "fonts/LLF-serif.woff2": "fonts/LLF-serif.woff2",
+  "fonts/LLF-sans.woff2": "fonts/LLF-sans.woff2",
+  "../theme.json": "../theme.json",
+  "images/cutout-2.svg": "images/cutout-2.svg",
+  "images/cutout-1.svg": "images/cutout-1.svg",
+  "hmr.json": "hmr.json",
+  "entrypoints.json": "entrypoints.json"
+}

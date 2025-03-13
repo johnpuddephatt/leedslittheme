@@ -1,0 +1,25 @@
+@layer utilities {
+  .type-2xl {
+    @apply font-serif text-6xl md:text-8xl 2xl:text-9xl  leading-tight 2xl:leading-none;
+  }
+
+  .type-xl {
+    @apply text-4xl 2xl:text-5xl leading-tight 2xl:leading-none;
+  }
+
+  .type-lg {
+    @apply text-2xl  leading-snug;
+  }
+
+  .type-md {
+    @apply text-xl  leading-snug;
+  }
+
+  .type-sm {
+    @apply text-lg  leading-snug;
+  }
+
+  .type-xs {
+    @apply leading-snug;
+  }
+}

@@ -1,0 +1,98 @@
+.pageload--overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 900;
+  pointer-events: none;
+
+  @media screen and (min-width: 800px) {
+    display: block;
+  }
+}
+
+.pageload--wipe {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  circle {
+    transition: r 1s;
+    fill: #ff7ce4;
+  }
+
+  .triggered {
+    animation: explode 1s ease forwards;
+  }
+}
+
+@keyframes explode {
+  0% {
+    r: 0;
+    opacity: 0;
+  }
+
+  25% {
+    fill: #ff7ce4;
+  }
+
+  50% {
+    /* r: 40vmax; */
+    opacity: 1;
+  }
+
+  100% {
+    r: 110vmax;
+    opacity: 0;
+    fill: #0079cc;
+  }
+}
+
+.pageload--logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+  color: #fff;
+}
+
+/****
+** FADE
+*****/
+
+/* transition active state (same for leave and enter) */
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.fade-enter-active {
+  transition:
+    opacity 0.75s ease,
+    transform 0.75s ease;
+}
+
+/* initial state */
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-enter {
+  /* transform: translateY(1rem); */
+  opacity: 0;
+}
+
+/* ending state */
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to {
+  transform: translateY(0);
+  opacity: 1;
+}

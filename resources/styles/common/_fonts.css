@@ -1,0 +1,11 @@
+@layer base {
+  @font-face {
+    font-family: 'LLF-sans';
+    src: url(~/fonts/LLF-sans.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'LLF-serif';
+    src: url(~/fonts/LLF-serif.woff2) format('woff2');
+  }
+}

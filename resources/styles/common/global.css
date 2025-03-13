@@ -1,0 +1,127 @@
+@import '_fonts';
+@import '_type';
+@import '_block-styles';
+@import '_clips';
+@import '_barba';
+
+.skip-none {
+  text-decoration-skip-ink: none;
+}
+
+img:not([src]) {
+  display: none;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+/* To handle quirk with ACF colour picker */
+/* .bg-gold-default {
+  @apply bg-gold;
+} */
+
+.alignwide,
+.page-content > .alignwide {
+  @apply max-w-7xl mx-auto;
+}
+
+.alignfull,
+.page-content > .alignfull {
+  @apply max-w-full;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.page-numbers {
+  @apply w-10 h-10 !no-underline text-xl  inline-flex transition items-center justify-center rounded-full border-2;
+}
+
+.page-numbers:hover {
+  @apply bg-black/10;
+}
+
+.page-numbers.current {
+  @apply bg-black text-white font-bold;
+}
+
+.page-sidebar-tree a:hover {
+  @apply no-underline;
+}
+
+.page-sidebar-tree li a {
+  @apply container block py-4 text-xl font-semibold  bg-pink bg-opacity-0 hover:bg-opacity-50 transition;
+}
+
+.page-sidebar-tree .children {
+  @apply hidden;
+}
+
+.page-sidebar-tree .current_page_item > .children,
+.page-sidebar-tree .current_page_ancestor > .children {
+  @apply block;
+}
+
+.page-sidebar-tree .children li a {
+  @apply text-base gap-2 flex items-start before:mt-3 before:w-6 before:flex-none before:h-px before:bg-black before:bg-opacity-25;
+}
+
+.page-sidebar-tree .current_page_item > a {
+  @apply !bg-opacity-100;
+}
+
+.post-content,
+.page-content {
+  @apply max-w-none break-words;
+}
+
+.prose :where(a):not([class~='not-prose']) {
+  @apply transition-all font-bold antialiased decoration-black/20 hover:decoration-black/70;
+}
+
+.post-content > :not(.wp-block-hero):first-child,
+.page-content > :not(.wp-block-hero):first-child,
+.page-content > .group:first-child > :not(.wp-block-hero):first-child,
+.post-content > .group:first-child > :not(.wp-block-hero):first-child {
+  @apply mt-0;
+}
+
+.page-content > *,
+.post-content > * {
+  max-width: var(--wp--style--global--content-size);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.embedded-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mc-field-group:not(.input-group) {
+  @apply flex flex-row gap-2  mb-4;
+}
+
+.indicates-required {
+  @apply text-right ml-auto w-32 block mb-2;
+}
+.input-group {
+  @apply border-2 p-6 mb-4;
+}
+
+.mc-field-group label {
+  @apply w-32 pt-2;
+}
+
+.form-control {
+  @apply p-2 border-2 rounded flex-grow;
+}
+
+.button {
+  @apply bg-white border-2  inline-block rounded-full bg-opacity-80 px-10 py-2.5 text-base font-semibold transition duration-300 hover:bg-opacity-100;
+}
