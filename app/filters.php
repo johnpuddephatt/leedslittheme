@@ -15,11 +15,6 @@ add_filter('excerpt_more', function () {
     return sprintf(' &hellip; <a href="%s">%s</a>', get_permalink(), __('Continued', 'sage'));
 });
 
-// add_filter('carbon_fields_map_field_api_key', function ($key) {
-//     return 'AIzaSyCNY11TdN4n8_smofsQV-8AbQsfC85Z7xM';
-// });
-
-
 add_action('load-index.php', function () {
     wp_redirect(admin_url('edit.php?post_type=page'));
 });
