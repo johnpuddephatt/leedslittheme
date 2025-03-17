@@ -38,7 +38,7 @@
       } }}">
       <div class="mb-2 leading-snug">
         @if ($show_date)
-          {{ wp_date(get_option('date_format'), strtotime(get_field('date', $event->ID))) }}
+          {{ wp_date(get_option('date_format'), strtotime(get_field('date', $event->ID))) }} &mdash;
         @endif
         {{ get_field('start_time', $event->ID) }}
       </div>
