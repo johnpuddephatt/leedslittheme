@@ -29,8 +29,9 @@
       </div>
     @else
       @foreach ($events as $event)
-        @if ($loop->first || get_the_date('Y-m-d', $event->ID) !== get_the_date('Y-m-d', $events[$loop->index - 1]->ID))
-          <h2 class="type-lg border-b pb-8 pt-16">{{ get_the_date(get_option('date_format'), $event->ID) }}</h2>
+        @if ($loop->first || get_field('date', $event->ID) !== get_field('date', $events[$loop->index - 1]->ID))
+          <h2 class="type-lg border-b pb-8 pt-16">
+            {{ wp_date(get_option('date_format'), strtotime(get_field('date', $event->ID))) }}</h2>
         @endif
         <x-event-card :show_date="false" variant="horizontal" :event="$event" />
       @endforeach

@@ -39,11 +39,8 @@
       <div class="mb-2 leading-snug">
         @if ($show_date)
           {{ wp_date(get_option('date_format'), strtotime(get_field('date', $event->ID))) }}
-
-          {{-- {{ get_the_date(get_option('date_format'), $event->ID) . '  –  ' }} --}}
         @endif
         {{ get_field('start_time', $event->ID) }}
-        {{-- {{ get_the_date(get_option('time_format'), $event->ID) }} --}}
       </div>
       <h2
         class="{{ $variant == 'default' ? ' type-md md:type-lg ' : ' type-lg md:type-xl ' }} mb-2 text-balance font-serif">
