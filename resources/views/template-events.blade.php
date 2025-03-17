@@ -33,7 +33,7 @@
           <h2 class="type-lg border-b pb-8 pt-16">
             {{ wp_date(get_option('date_format'), strtotime(get_field('date', $event->ID))) }}</h2>
         @endif
-        <x-event-card :show_date="false" variant="horizontal" :event="$event" />
+        <x-event-card variant="horizontal" :event="$event" />
       @endforeach
     @endif
   </div>
