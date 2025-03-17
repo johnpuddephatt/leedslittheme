@@ -20,16 +20,16 @@ export default function setupBarba() {
       // window.gtag('send', 'pageview');
     });
 
-    // barba.hooks.enter(() => {
-    //   history.scrollRestoration = 'manual';
-    //   // if (window.location.hash) {
-    //   //   let hash = window.location.hash.substring(1);
-    //   //   let el = document.getElementById(hash);
-    //   //   if (el) {
-    //   //     el.scrollIntoView({ behavior: 'smooth' });
-    //   //   }
-    //   // }
-    // });
+    barba.hooks.enter(() => {
+      history.scrollRestoration = 'manual';
+      // if (window.location.hash) {
+      //   let hash = window.location.hash.substring(1);
+      //   let el = document.getElementById(hash);
+      //   if (el) {
+      //     el.scrollIntoView({ behavior: 'smooth' });
+      //   }
+      // }
+    });
 
     barba.init({
       debug: true,
