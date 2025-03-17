@@ -1,6 +1,6 @@
 <div class="group flex items-center gap-1">
-  <div class="relative overflow-hidden bg-pink px-3 py-2">
-    <svg {{ $attributes->class('h-8 w-auto flex-none  relative z-10 ') }} xmlns="http://www.w3.org/2000/svg"
+  <div class="relative overflow-hidden bg-pink px-5 py-1.5">
+    <svg {{ $attributes->class('h-7 w-auto flex-none  relative z-10 ') }} xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 10.94 15.83">
 
       <path fill="#ff7ce4" stroke="#000" stroke-miterlimit="10" stroke-width=".43" d="M2.83 15.66 2.83 4.42" />
@@ -16,6 +16,6 @@
       class="absolute left-0 top-0 h-full w-[250%] -translate-x-full bg-gradient-to-r from-blue to-transparent duration-1000 group-hover:translate-x-0">
     </div>
   </div>
-  <div class="translate-y-0.5">
+  <div class="translate-y-0.5 pl-1.5">
     {{ $siteName }}</div>
 </div>

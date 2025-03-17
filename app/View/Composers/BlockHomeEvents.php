@@ -23,7 +23,7 @@ class BlockHomeEvents extends Composer
             'events' => get_posts([
                 'post_type' => 'event',
                 'orderby' => ['start_date' => 'ASC'],
-                'numberposts' => get_option('posts_per_page'),
+                'numberposts' => 4,
                 'page' => (int) get_query_var('paged')
             ])
         ];

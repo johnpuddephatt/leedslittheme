@@ -34,7 +34,7 @@
         </a>
 
         <button @click="menuOpen = true" :class="{ 'hidden': menuOpen }"
-          class="flex items-center gap-1 px-6 py-2 text-sm uppercase lg:hidden" aria-label="Open navigation menu"
+          class="flex items-center gap-1 px-6 py-1.5 text-sm uppercase lg:hidden" aria-label="Open navigation menu"
           title="Open navigation menu">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-5 -translate-y-0.5">
@@ -45,7 +45,7 @@
         </button>
 
         <button @click="menuOpen = false" :class="{ 'hidden': !menuOpen }"
-          class="flex items-center gap-1 px-6 py-2 text-sm uppercase lg:hidden" aria-label="Close navigation menu"
+          class="flex items-center gap-1 px-6 py-1.5 text-sm uppercase lg:hidden" aria-label="Close navigation menu"
           title="Close navigation menu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
             stroke-width="1.5" stroke="currentColor" class="size-5 -translate-y-0.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -62,7 +62,7 @@
               class="flex flex-col gap-4 pr-8 transition delay-200 duration-500 max-lg:container lg:flex-row lg:gap-8">
               @foreach ($primaryNavigation as $item)
                 <li>
-                  <a class="inline-block lg:p-3" href="{{ $item->url }}">{!! $item->label !!}</a>
+                  <a class="inline-block lg:p-2" href="{{ $item->url }}">{!! $item->label !!}</a>
                 </li>
               @endforeach
             </ul>

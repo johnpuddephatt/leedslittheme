@@ -1,4 +1,4 @@
-@props(['event', 'variant' => 'default', 'show_date' => true])
+@props(['event', 'bg' => null, 'variant' => 'default', 'show_date' => true])
 
 <div
   {{ $attributes->merge([
@@ -7,7 +7,7 @@
           match ($variant) {
               'horizontal' => ' flex-row-reverse gap-4 border-b items-center  ',
               'large' => ' flex-col md:flex-row-reverse md:col-span-2 lg:col-span-3  ',
-              default => ' flex-col gap-4 ',
+              default => ' flex-col ',
           },
   ]) }}>
 
@@ -29,9 +29,13 @@
       @endif
     </div>
   @endif
-  <div class="flex flex-grow flex-col">
+  <div class="{{ $bg }} flex flex-grow flex-col">
     <div
-      class="{{ $variant == 'large' ? 'bg-white my-auto flex-grow flex flex-col justify-center pr-28 md:pr-32 px-4 py-6 md:p-8 lg:p-12 text-black' : null }}">
+      class="{{ match ($variant) {
+          'large' => 'my-auto flex-grow flex flex-col justify-center pr-28 md:pr-32 px-4 py-6 md:p-8 lg:p-12 text-black',
+          'horizontal' => ' ',
+          default => ' p-4 ',
+      } }}">
       <div class="mb-2 leading-snug">
         @if ($show_date)
           {{ get_the_date(get_option('date_format'), $event->ID) . '  –  ' }}

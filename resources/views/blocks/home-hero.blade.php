@@ -16,11 +16,13 @@
     class="relative flex flex-col items-center justify-center opacity-0 transition-opacity delay-1000 duration-[6000ms]">
     <x-logo class="mb-12 w-24 md:w-40" />
 
-    <h1 class="text-center text-lg md:text-2xl lg:mb-4">
-      ....?
-    </h1>
-    <p class="text-center font-serif text-3xl md:text-4xl lg:text-5xl">
+    <h1 class="text-center font-serif text-3xl md:text-4xl lg:text-5xl">
       {{ $heading }}
-    </p>
+    </h1>
+
+    @if ($link)
+      <x-button class="mt-8" :arrow="true" :invert="true" :label="$link['title']" :url="$link['url']"
+        :target="$link['target']" />
+    @endif
   </div>
 </div>

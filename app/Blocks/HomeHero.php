@@ -178,7 +178,7 @@ class HomeHero extends Block
         $fields = Builder::make('home_hero');
         $fields
             ->addText('heading')
-            ->addUrl('link');
+            ->addLink('link');
         return $fields->build();
     }
 

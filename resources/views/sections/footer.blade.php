@@ -1,5 +1,5 @@
 <footer class="bg-black pb-4 pt-12 text-white antialiased md:pt-24 lg:pb-8">
-  <div class="container flex max-w-none flex-col justify-between gap-8 md:gap-16 lg:flex-row">
+  <div class="container flex flex-col justify-between gap-8 md:gap-16 lg:flex-row">
     <div>
       <x-logo class="!w-40 md:!w-48" :invert="true" />
       <div class="mt-2 max-w-lg">
@@ -40,7 +40,7 @@
 
   </div>
   <div
-    class="container mt-8 flex max-w-none flex-col-reverse justify-between gap-8 text-sm font-semibold text-white text-opacity-80 md:mt-16 md:items-end lg:flex-row">
+    class="container mt-8 flex flex-col-reverse justify-between gap-8 text-sm font-semibold text-white text-opacity-80 md:mt-16 md:items-end lg:flex-row">
     <p><a href="https://letsdance.agency" target="_blank">Website by Let’s Dance</a></p>
     <div class="md:text-right">
       <svg xmlns="http://www.w3.org/2000/svg" width="367.34" height="130.16"
@@ -87,6 +87,5 @@
 
     </div>
   </div>
-  <div>{{ get_num_queries() }} queries</div>
 
 </footer>

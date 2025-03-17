@@ -178,7 +178,7 @@ class HomeEvents extends Block
         $fields = Builder::make('home_events');
         $fields
             ->addText('heading')
-            ->addUrl('link');
+            ->addLink('link');
         return $fields->build();
     }
 
