@@ -1,5 +1,6 @@
 <div x-data="homeHero"
-  class="alignfull not-prose relative flex h-[90vh] w-screen flex-col items-center justify-center bg-blue">
+  class="alignfull not-prose relative flex h-[90vh] w-screen flex-col items-center justify-center">
+  <div class="fixed inset-0 -z-20 bg-blue"></div>
   <img src="{{ asset('images/bg.jpg') }} " id="fallback"
     class="fixed inset-0 -z-10 h-[90vh] w-screen object-cover opacity-0 transition-opacity delay-1000 duration-[3000ms]"
     loading="lazy" />
