@@ -26,7 +26,7 @@ class EventArchive extends Composer
                 'post_type' => 'event',
                 // 'orderby' => ['start_date' => 'ASC'],
                 "orderby" => "meta_value",
-                "meta_key" => "_date",
+                "meta_key" => "date",
                 "order" => "ASC",
                 'numberposts' => get_option('posts_per_page'),
                 'page' => (int) get_query_var('paged')
