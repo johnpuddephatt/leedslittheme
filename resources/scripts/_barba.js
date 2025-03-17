@@ -48,6 +48,7 @@ export default function setupBarba() {
             }, 1000);
             return new Promise((resolve) => {
               setTimeout(() => {
+                window.scrollTo(0, 0);
                 resolve();
               }, 500);
             });
