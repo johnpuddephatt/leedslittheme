@@ -1,13 +1,13 @@
 <footer class="bg-black pb-4 pt-12 text-white antialiased md:pt-24 lg:pb-8">
   <div class="container flex flex-col justify-between gap-8 md:gap-16 lg:flex-row">
     <div>
-      <x-logo class="!w-24 md:!w-32" :invert="true" />
+      <x-logo class="!w-18 md:!w-24" :invert="true" />
       <div class="mt-2 max-w-lg">
         {{ get_field('company_info', 'option') }}
       </div>
     </div>
     <div class="lg:ml-auto">
-      <div class="flex flex-col gap-8 md:gap-16 lg:flex-row">
+      <div class="flex flex-col items-end justify-end gap-8 md:gap-16 lg:flex-row">
 
         <div class="flex flex-row items-start gap-2 md:mt-2 lg:justify-end">
           @if (get_field('social_media', 'option'))
