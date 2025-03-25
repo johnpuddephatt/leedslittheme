@@ -17,3 +17,7 @@
     transform: translateY(-1.5%);
   }
 }
+
+div[data-barba-class] + div[data-barba-class] {
+  opacity: 0;
+}

@@ -14,23 +14,14 @@
 
       </a>
 
-      <button @click="menuOpen = true" :class="{ 'hidden': menuOpen }"
-        class="flex items-center gap-1 px-6 py-1.5 text-sm uppercase lg:hidden" aria-label="Open navigation menu"
-        title="Open navigation menu">
+      <button @click="menuOpen = !menuOpen"
+        class="flex translate-y-0.5 items-center gap-1 px-2 py-1.5 text-sm uppercase md:px-6 lg:hidden"
+        aria-label="Open navigation menu" title="Open navigation menu">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
           stroke="currentColor" class="size-5 -translate-y-0.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
-        Menu
-      </button>
-
-      <button @click="menuOpen = false" :class="{ 'hidden': !menuOpen }"
-        class="flex items-center gap-1 px-6 py-1.5 text-sm uppercase lg:hidden" aria-label="Close navigation menu"
-        title="Close navigation menu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-          stroke-width="1.5" stroke="currentColor" class="size-5 -translate-y-0.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
         Menu
       </button>
 
@@ -43,7 +34,8 @@
             class="flex flex-col gap-4 pr-8 transition delay-200 duration-500 max-lg:container lg:flex-row lg:gap-8">
             @foreach ($primaryNavigation as $item)
               <li>
-                <a class="inline-block lg:p-2" href="{{ $item->url }}">{!! $item->label !!}</a>
+                <a @click="menuOpen = false" class="inline-block lg:p-2"
+                  href="{{ $item->url }}">{!! $item->label !!}</a>
               </li>
             @endforeach
           </ul>
@@ -54,7 +46,8 @@
               <ul class="flex flex-col gap-2 font-semibold lg:text-lg">
                 @foreach ($secondaryNavigation as $item)
                   <li>
-                    <a class="inline-block lg:p-3" href="{{ $item->url }}">{!! $item->label !!}</a>
+                    <a @click="menuOpen = false" class="inline-block lg:p-3"
+                      href="{{ $item->url }}">{!! $item->label !!}</a>
                   </li>
                 @endforeach
               </ul>

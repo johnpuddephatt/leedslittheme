@@ -1,7 +1,7 @@
 <footer class="bg-black pb-4 pt-12 text-white antialiased lg:pb-8">
   <div class="container flex flex-col justify-between gap-8 md:gap-16 lg:flex-row">
     <div>
-      <x-logo class="!w-18 md:!w-24" :invert="true" />
+      <x-logo class="!w-16 md:!w-24" :invert="true" />
 
     </div>
     <div class="flex flex-col items-end justify-end gap-8 md:gap-16 lg:ml-auto lg:flex-row">

@@ -1,5 +1,5 @@
-<div class="alignfull bg-white py-24" x-data="newsletter">
-  <div class="container grid grid-cols-2 items-center">
+<div class="alignfull overflow-hidden bg-white py-24" x-data="newsletter">
+  <div class="container grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-0">
     <div>
       <h2 class="type-xl mb-4 mt-0 text-balance font-serif">{{ $heading }}</h2>
       <p>{{ $subheading }}</p>
@@ -31,7 +31,8 @@
     </div>
 
     <div class="relative z-10">
-      <canvas class="pointer-events-none absolute -inset-24 z-20 h-[calc(100%+12rem)] w-[calc(100%+12rem)]"
+      <canvas
+        class="pointer-events-none absolute -inset-24 z-20 h-[calc(100%+12rem)] w-[calc(100%+12rem)] opacity-0 transition duration-1000"
         id="newsletter-orbits"></canvas>
       <div class="animate-float">
         <div class="absolute inset-0.5 -z-10 bg-blue" id="newsletter-canvas-wrapper">

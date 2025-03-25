@@ -1,5 +1,5 @@
 <div class="group flex items-center gap-1">
-  <div class="relative overflow-hidden bg-pink px-5 py-1.5">
+  <div class="relative overflow-hidden bg-pink px-3 py-1 md:px-5 md:py-1.5">
     <svg {{ $attributes->class('h-7 w-auto flex-none  relative z-10 ') }} xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 10.94 15.83">
 
@@ -16,6 +16,6 @@
       class="absolute left-0 top-0 h-full w-[250%] -translate-x-full bg-gradient-to-r from-blue to-transparent duration-1000 group-hover:translate-x-0">
     </div>
   </div>
-  <div class="translate-y-0.5 pl-1.5">
+  <div class="translate-y-0.5 pl-0.5 text-sm md:pl-1.5 md:text-base">
     {{ $siteName }}</div>
 </div>

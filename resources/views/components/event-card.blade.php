@@ -32,7 +32,7 @@
   <div class="{{ $bg }} flex flex-grow flex-col">
     <div
       class="{{ match ($variant) {
-          'large' => 'my-auto flex-grow flex flex-col justify-center pr-28 md:pr-32 px-4 py-6 md:p-8 lg:p-12 text-black',
+          'large' => 'my-auto flex-grow flex flex-col justify-center md:pr-32 px-4 py-6 md:p-8 lg:p-12 text-black',
           'horizontal' => ' ',
           default => ' p-4 ',
       } }}">
