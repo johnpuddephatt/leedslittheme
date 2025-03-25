@@ -5,7 +5,7 @@
       'before:pointer-events-none before:opacity-0': !menuOpen
   }">
 
-  <div class="fixed inset-0 -z-20" @click="menuOpen = false"></div>
+  <div :class="{ 'pointer-events-none': !menuOpen }" class="fixed inset-0 -z-20" @click="menuOpen = false"></div>
 
   <div class="container">
     <div class="relative flex max-w-none items-center justify-between bg-opacity-95 shadow-lg"

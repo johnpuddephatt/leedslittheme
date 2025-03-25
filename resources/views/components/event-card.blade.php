@@ -17,7 +17,7 @@
           'horizontal' => ' w-1/3  ',
           'large' => ' md:w-1/2  md:-ml-28 md:my-4 ',
           default => ' w-full ',
-      } }} overflow-hidden">
+      } }} flex-none overflow-hidden">
 
       {!! get_the_post_thumbnail($event->ID, 'wide', [
           'sizes' => '25vw',
