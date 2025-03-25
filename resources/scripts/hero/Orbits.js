@@ -23,6 +23,7 @@ export function createOrbits(elem, bodies) {
 
   setTimeout(() => {
     setupCanvas(elem);
+    elem.classList.remove('opacity-0');
   }, 50);
 
   function next() {

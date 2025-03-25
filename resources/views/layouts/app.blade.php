@@ -30,12 +30,12 @@
         <title>{!! $title !!}</title>
       </head>
 
-      <body>
+      <body @php(body_class('bg-pink-light'))>
 @endif
 
 @include('partials.loading')
 
-<div data-barba-class="{{ join(' ', get_body_class()) }}" data-barba="container"
+<div data-barba-class="{{ join(' ', get_body_class('bg-pink-light')) }}" data-barba="container"
   data-barba-namespace="{{ basename(get_permalink()) }}">
 
   <main id="main" class="main">

@@ -1,7 +1,7 @@
 <footer class="bg-black pb-4 pt-12 text-white antialiased md:pt-24 lg:pb-8">
   <div class="container flex flex-col justify-between gap-8 md:gap-16 lg:flex-row">
     <div>
-      <x-logo class="!w-40 md:!w-48" :invert="true" />
+      <x-logo class="!w-24 md:!w-32" :invert="true" />
       <div class="mt-2 max-w-lg">
         {{ get_field('company_info', 'option') }}
       </div>
@@ -12,8 +12,8 @@
         <div class="flex flex-row items-start gap-2 md:mt-2 lg:justify-end">
           @if (get_field('social_media', 'option'))
             @foreach (get_field('social_media', 'option') as $account)
-              <a rel="noopener" class="inline-block rounded-full bg-white p-2" aria-label="{{ $account['Type'] }} link"
-                href="{{ $account['link'] }}" target="_blank">
+              <a rel="noopener" class="inline-block rounded-full bg-white p-2 text-black"
+                aria-label="{{ $account['Type'] }} link" href="{{ $account['link'] }}" target="_blank">
                 <x-dynamic-component :component="'icon.' . strtolower($account['Type'])" class="mt-4" />
               </a>
             @endforeach
@@ -40,8 +40,8 @@
 
   </div>
   <div
-    class="container mt-8 flex flex-col-reverse justify-between gap-8 text-sm font-semibold text-white text-opacity-80 md:mt-16 md:items-end lg:flex-row">
-    <p><a href="https://letsdance.agency" target="_blank">Website by Let’s Dance</a></p>
+    class="container mt-4 flex flex-col-reverse justify-between gap-8 text-sm font-semibold text-white text-opacity-80 md:mt-16 md:items-end lg:flex-row">
+    <p class="font-semibold"><a href="https://letsdance.agency" target="_blank">Website by Let’s Dance</a></p>
     <div class="md:text-right">
       <svg xmlns="http://www.w3.org/2000/svg" width="367.34" height="130.16"
         class="mb-2 h-auto w-28 text-white md:ml-auto" viewBox="0 0 367.34 130.16">

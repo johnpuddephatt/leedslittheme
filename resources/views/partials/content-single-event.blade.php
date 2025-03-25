@@ -1,8 +1,9 @@
 <article @php(post_class())>
-  <div x-data="header" class="container my-32">
+  <div x-data="eventHeader" class="container my-32">
 
-    <canvas class="pointer-events-none absolute aspect-[2] w-full -translate-y-1/2 translate-x-1/2"
-      id="header-orbits"></canvas>
+    <canvas
+      class="pointer-events-none absolute aspect-[2] w-full -translate-y-1/2 translate-x-1/2 opacity-0 transition duration-1000"
+      id="event-orbits"></canvas>
 
     <a href="{{ get_permalink(get_option('page_for_events ')) }}" class="type-md mb-8">What’s On</a>
 
