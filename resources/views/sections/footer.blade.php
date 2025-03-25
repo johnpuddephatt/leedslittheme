@@ -2,45 +2,43 @@
   <div class="container flex flex-col justify-between gap-8 md:gap-16 lg:flex-row">
     <div>
       <x-logo class="!w-18 md:!w-24" :invert="true" />
-      <div class="mt-2 max-w-lg">
-        {{ get_field('company_info', 'option') }}
-      </div>
+
     </div>
-    <div class="lg:ml-auto">
-      <div class="flex flex-col items-end justify-end gap-8 md:gap-16 lg:flex-row">
+    <div class="flex flex-col items-end justify-end gap-8 md:gap-16 lg:ml-auto lg:flex-row">
 
-        <div class="flex flex-row items-start gap-2 md:mt-2 lg:justify-end">
-          @if (get_field('social_media', 'option'))
-            @foreach (get_field('social_media', 'option') as $account)
-              <a rel="noopener" class="inline-block rounded-full bg-white p-2 text-black"
-                aria-label="{{ $account['Type'] }} link" href="{{ $account['link'] }}" target="_blank">
-                <x-dynamic-component :component="'icon.' . strtolower($account['Type'])" class="mt-4" />
-              </a>
-            @endforeach
-          @endif
-        </div>
-        @if ($secondaryNavigation)
-          <div class="">
-            <nav>
-              <ul class="columns-2 gap-8 font-semibold">
-
-                @foreach ($secondaryNavigation as $item)
-                  <li>
-                    <a class="inline-block" href="{{ $item->url }}">{{ $item->label }}</a>
-                  </li>
-                @endforeach
-              </ul>
-            </nav>
-          </div>
+      <div class="flex flex-row items-start gap-2 md:mt-2 lg:justify-end">
+        @if (get_field('social_media', 'option'))
+          @foreach (get_field('social_media', 'option') as $account)
+            <a rel="noopener" class="inline-block rounded-full bg-white p-2 text-black"
+              aria-label="{{ $account['Type'] }} link" href="{{ $account['link'] }}" target="_blank">
+              <x-dynamic-component :component="'icon.' . strtolower($account['Type'])" class="mt-4" />
+            </a>
+          @endforeach
         @endif
-
       </div>
+      @if ($secondaryNavigation)
+        <div class="">
+          <nav>
+            <ul class="columns-2 gap-8 font-semibold">
+
+              @foreach ($secondaryNavigation as $item)
+                <li>
+                  <a class="inline-block" href="{{ $item->url }}">{{ $item->label }}</a>
+                </li>
+              @endforeach
+            </ul>
+          </nav>
+        </div>
+      @endif
 
     </div>
 
   </div>
   <div
     class="container mt-4 flex flex-col-reverse justify-between gap-8 text-sm font-semibold text-white text-opacity-80 md:mt-16 md:items-end lg:flex-row">
+    <div class="mb-2 max-w-lg">
+      {{ get_field('company_info', 'option') }}
+    </div>
     <p class="font-semibold"><a href="https://letsdance.agency" target="_blank">Website by Let’s Dance</a></p>
     <div class="md:text-right">
       <svg xmlns="http://www.w3.org/2000/svg" width="367.34" height="130.16"
