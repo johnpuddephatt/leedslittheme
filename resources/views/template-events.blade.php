@@ -22,7 +22,7 @@
     </div>
 
     @if (($_GET['layout'] ?? false) === 'grid')
-      <div class="mt-36 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-36 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-y-12 lg:grid-cols-3">
         @foreach ($events as $event)
           <x-event-card :event="$event" />
         @endforeach
