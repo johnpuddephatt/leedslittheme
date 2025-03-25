@@ -27,8 +27,9 @@
 
       @if ($primaryNavigation)
 
-        <nav x-cloak :class="{ 'max-lg:-translate-y-12 max-lg:opacity-0 max-lg:pointer-events-none': !menuOpen }"
-          class="flex flex-col justify-center overflow-y-auto transition duration-500 max-lg:absolute max-lg:left-0 max-lg:right-0 max-lg:top-full max-lg:-z-10 max-lg:max-h-[75vh] max-lg:w-full max-lg:bg-white max-lg:py-12">
+        <nav x-cloak
+          :class="{ 'max-lg:-translate-y-12 max-lg:pointer-events-none': !menuOpen, 'max-lg:!opacity-100': menuOpen }"
+          class="flex flex-col justify-center overflow-y-auto transition duration-500 max-lg:absolute max-lg:left-0 max-lg:right-0 max-lg:top-full max-lg:-z-10 max-lg:max-h-[75vh] max-lg:w-full max-lg:bg-white max-lg:py-12 max-lg:opacity-0">
 
           <ul :class="{ 'max-lg:-translate-y-6 max-lg:opacity-0': !menuOpen }"
             class="flex flex-col gap-4 pr-8 transition delay-200 duration-500 max-lg:container lg:flex-row lg:gap-8">
