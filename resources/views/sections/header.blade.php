@@ -1,9 +1,11 @@
 <header
-  class="fixed left-0 right-0 top-4 z-20 before:fixed before:inset-0 before:-z-10 before:bg-black/80 before:transition before:duration-1000"
+  class="fixed left-0 right-0 top-4 z-20 before:fixed before:inset-0 before:-z-30 before:bg-black/80 before:transition before:duration-1000"
   :class="{
       '': menuOpen,
       'before:pointer-events-none before:opacity-0': !menuOpen
   }">
+
+  <div class="fixed inset-0 -z-20" @click="menuOpen = false"></div>
 
   <div class="container">
     <div class="relative flex max-w-none items-center justify-between bg-opacity-95 shadow-lg"
