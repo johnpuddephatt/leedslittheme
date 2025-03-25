@@ -35,11 +35,14 @@
 
   </div>
   <div
-    class="container mt-4 flex flex-col-reverse justify-between gap-8 text-sm font-semibold text-white text-opacity-80 md:mt-16 md:items-end lg:flex-row">
-    <div class="mb-2 max-w-lg">
-      {{ get_field('company_info', 'option') }}
+    class="container mt-4 flex flex-col-reverse justify-between gap-8 text-sm font-semibold text-white text-opacity-80 md:mt-8 md:items-end lg:flex-row">
+
+    <div>
+      <div class="mb-2 max-w-lg">
+        {{ get_field('company_info', 'option') }}
+      </div>
+      <p class="font-semibold"><a href="https://letsdance.agency" target="_blank">Website by Let’s Dance</a></p>\
     </div>
-    <p class="font-semibold"><a href="https://letsdance.agency" target="_blank">Website by Let’s Dance</a></p>
     <div class="md:text-right">
       <svg xmlns="http://www.w3.org/2000/svg" width="367.34" height="130.16"
         class="mb-2 h-auto w-28 text-white md:ml-auto" viewBox="0 0 367.34 130.16">
