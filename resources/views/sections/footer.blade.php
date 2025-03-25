@@ -38,10 +38,10 @@
     class="container mt-4 flex flex-col-reverse justify-between gap-8 text-sm font-semibold text-white text-opacity-80 md:mt-8 md:items-end lg:flex-row">
 
     <div>
-      <div class="mb-2 max-w-lg">
+      <div class="mb-1 max-w-lg">
         {{ get_field('company_info', 'option') }}
       </div>
-      <p class="font-semibold"><a href="https://letsdance.agency" target="_blank">Website by Let’s Dance</a></p>\
+      <p class="font-semibold"><a href="https://letsdance.agency" target="_blank">Website by Let’s Dance</a></p>
     </div>
     <div class="md:text-right">
       <svg xmlns="http://www.w3.org/2000/svg" width="367.34" height="130.16"
