@@ -35,7 +35,7 @@
 
 @include('partials.loading')
 
-<div data-barba-class="{{ join(' ', get_body_class('transition duration-500')) }}" data-barba="container"
+<div data-barba-class="{{ join(' ', get_body_class('bg-pink-light transition duration-500')) }}" data-barba="container"
   data-barba-namespace="{{ basename(get_permalink()) }}">
 
   <main id="main" class="main">
