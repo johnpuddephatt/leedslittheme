@@ -38,9 +38,15 @@
       } }} {{ $bg ? 'px-4' : '' }}">
       <div class="mb-2 leading-snug">
         @if ($show_date)
-          {{ wp_date(get_option('date_format'), strtotime(get_field('date', $event->ID))) }} &mdash;
+          {{ wp_date(get_option('date_format'), strtotime(get_field('date', $event->ID))) }}
+          @if (get_field('start_time', $event->ID))
+            &mdash;
+          @endif
         @endif
-        {{ get_field('start_time', $event->ID) }}
+        @if (get_field('start_time', $event->ID))
+          {{ get_field('start_time', $event->ID) }}
+        @endif
+
       </div>
       <h2 class="{{ $variant == 'default' ? ' type-lg ' : ' type-lg md:type-xl ' }} mb-2 text-balance font-serif">
         {!! $event->post_title !!}</h2>

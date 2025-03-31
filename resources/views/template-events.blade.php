@@ -6,7 +6,7 @@
 
 @section('content')
 
-  <div class="container my-32 2xl:my-48" x-data="{ layout: '{{ $_GET['layout'] ?? 'list' }}' }">
+  <div class="container my-32 2xl:my-48" x-data="{ layout: '{{ $_GET['layout'] ?? 'grid' }}' }">
     <div class="flex flex-col justify-between md:flex-row md:items-end">
       <h1 class="type-2xl">
         What’s On</h1>

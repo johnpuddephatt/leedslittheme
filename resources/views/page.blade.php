@@ -5,13 +5,14 @@
 
       @if (has_post_thumbnail($post->ID))
         <div class="relative">
-          <canvas
-            class="pointer-events-none absolute z-20 hidden h-full w-full opacity-0 transition duration-1000 md:block"
-            id="header-orbits"></canvas>
+
           {!! get_the_post_thumbnail($post->ID, 'wide-3xl', [
               'class' => ' block w-full mb-8  h-auto',
               'sizes' => '100vw',
           ]) !!}
+          <canvas
+            class="pointer-events-none absolute left-0 top-0 hidden h-full w-full opacity-0 transition duration-1000 md:block"
+            id="header-orbits"></canvas>
         </div>
       @endif
 

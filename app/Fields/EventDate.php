@@ -18,6 +18,7 @@ class EventDate extends Field
             ->setLocation('post_type', '==', 'event')
             ->addDatePicker('date', [
                 'return_format' => 'Y-m-d',
+                'required' => true,
             ])
             ->addTimePicker('start_time')
             ->addTimePicker('end_time', [
