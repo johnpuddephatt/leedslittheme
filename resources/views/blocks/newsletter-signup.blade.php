@@ -4,17 +4,20 @@
       <h2 class="type-xl mb-4 mt-0 text-balance font-serif">{{ $heading }}</h2>
       <p>{{ $subheading }}</p>
 
-      <form id="mc-embedded-subscribe-form" class="validate max-w-md pt-4" action="{{ $mailchimp_form_url }}" method="post"
-        name="mc-embedded-subscribe-form" novalidate="" target="_blank">
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input tabindex="-1"
-            name="b_27860ab2b8185d0189fb1222c_b2ae2b005f" type="text" value=""></div>
+      <form class="js-cm-form max-w-md pt-4" " id="subForm" action="https://www.createsend.com/t/subscribeerror?description="
+          method="post"
+          data-id="191722FC90141D02184CB1B62AB3DC2699088582091C04B7DEDD82E079F655BBD450ABBB81806B3CD2F2F79BFD0911B1CAACC8618D469C8584375502C56AF069">
+          <div>
+            <div><input placeholder="Your email address"  aria-label="Email address" autocomplete="Email"
+                class="js-cm-email-input email qa-input-email block w-full border bg-transparent px-4 py-2" id="fieldEmail" maxlength="200"
+                
 
-        <input id="mce-EMAIL" class="email block w-full border bg-transparent px-4 py-2" name="EMAIL" required=""
-          type="email" value="" placeholder="Your Email Address">
-
-        <button type="submit" class="group relative mt-4 block w-full">
-
-          <div
+                name="cm-tjjllul-tjjllul"
+                required="" type="email"></div>
+          </div>
+          
+          <button class="group relative mt-4 block w-full" type="submit">
+            <div
             class="relative flex h-12 items-center justify-between overflow-hidden bg-pink px-4 py-2 text-center text-black !no-underline transition-all duration-1000">
             <div
               class="absolute left-0 top-0 h-full w-[150%] -translate-x-full bg-gradient-to-r from-blue to-transparent duration-1000 will-change-transform group-hover:translate-x-0">
@@ -25,9 +28,9 @@
             @svg('arrow-right', 'ml-4 size-8 relative z-10 group-hover:translate-x-1 transition  duration-500')
 
           </div>
-        </button>
-
-      </form>
+          </button>
+        </form>
+      <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
     </div>
 
     <div class="relative z-10">
@@ -42,3 +45,4 @@
       </div>
     </div>
   </div>
+</div>
