@@ -8,6 +8,10 @@
     @php(do_action('get_header'))
     @php(wp_head())
 
+    <meta property="og:title" content="{!! $title !!}" />
+    <meta property="og:description" content="{!! $og['description'] !!}" />
+    <meta property="og:image" content="{!! $og['image'] !!}" />
+
   </head>
 
   <body @php(body_class('bg-pink-light'))>

@@ -21,12 +21,18 @@ class App extends Composer
      */
     public function with()
     {
+
         return [
             'title' => $this->title(),
             'siteName' => $this->siteName(),
             'primaryNavigation' => $this->primaryNavigation(),
             'secondaryNavigation' => $this->secondaryNavigation(),
             'footerNavigation' => $this->footerNavigation(),
+
+            'og' => [
+                'description' => get_the_excerpt() ?: get_bloginfo('description'),
+                'image' => get_the_post_thumbnail_url(get_the_ID(), 'large') ?: wp_get_attachment_image_src(get_field('social_media_image', 'options'), 'large')[0]
+            ],
         ];
     }
 

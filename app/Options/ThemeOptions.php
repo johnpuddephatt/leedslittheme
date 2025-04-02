@@ -42,7 +42,15 @@ class ThemeOptions extends Field
             ->addChoices(['Twitter', 'Facebook', 'Instagram', 'LinkedIn', 'Bluesky'])
             ->addUrl('link')
             ->endRepeater()
-            ->addText('company_info');
+            ->addText('company_info')
+            ->addImage(
+                'social_media_image',
+                [
+                    'label' => 'Social media image',
+                    'instructions' => 'This image will be used as the default social media preview if no image is set on the page.',
+                    'return_format' => 'id'
+                ]
+            );
 
 
 
