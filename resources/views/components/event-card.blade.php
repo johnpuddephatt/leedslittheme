@@ -23,7 +23,9 @@
           'class' => '  h-full w-full object-cover transition duration-1000 group-hover:scale-105',
       ]) !!}
     @else
-      <div class="aspect-[2] h-full w-full bg-pink-light"></div>
+      <div class="flex aspect-[2] h-full w-full items-center justify-center bg-blue/30">
+        <x-logo-simple />
+      </div>
     @endif
     @if ($variant === 'horizontal')
       <x-button class="hidden md:block" :cover="true" :arrow="true" url="{{ get_permalink($event->ID) }}"
