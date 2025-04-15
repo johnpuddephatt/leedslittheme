@@ -23,8 +23,8 @@
           'class' => '  h-full w-full object-cover transition duration-1000 group-hover:scale-105',
       ]) !!}
     @else
-      <div class="flex aspect-[2] h-full w-full items-center justify-center bg-blue/30">
-        <x-logo-simple />
+      <div class="flex aspect-[2] h-full w-full items-center justify-center bg-pink/30">
+        <x-logo class="h-auto w-8" />
       </div>
     @endif
     @if ($variant === 'horizontal')
