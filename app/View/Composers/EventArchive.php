@@ -36,7 +36,7 @@ class EventArchive extends Composer
             'events' => get_posts(array_merge($sort, [
                 'post_type' => 'event',
                 "order" => "ASC",
-                'numberposts' => get_option('posts_per_page'),
+                'numberposts' => 9999,
                 'page' => (int) get_query_var('paged')
             ]))
         ];

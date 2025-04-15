@@ -1,4 +1,4 @@
-<article @php(post_class())>
+<article @php(post_class('overflow-hidden relative'))>
   <div x-data="eventHeader" class="container my-24 md:my-32">
 
     <canvas
