@@ -22,8 +22,21 @@ class EventArchive extends Composer
 
         if (($_GET['layout'] ?? false) == 'list') {
             $sort = [
-                "orderby" => "meta_value",
-                "meta_key" => "date"
+                'orderby' => [
+                    'event_start_date_clause' => 'ASC',
+                    'event_start_time_clause' => 'ASC'
+                ],
+                'meta_query' => [
+                    'relation' => 'AND',
+                    'event_start_date_clause' => [
+                        'key'     => 'date',
+                        'compare' => 'EXISTS',
+                    ],
+                    'event_start_time_clause' => [
+                        'key'     => 'start_time',
+                        'compare' => 'EXISTS',
+                    ],
+                ],
             ];
         } else {
             $sort = [
