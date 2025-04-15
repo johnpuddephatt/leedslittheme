@@ -24,7 +24,7 @@
       ]) !!}
     @else
       <div class="flex aspect-[2] h-full w-full items-center justify-center bg-pink/30">
-        <x-logo class="h-auto w-16" />
+        <x-logo :invert="true" class="h-auto w-24" />
       </div>
     @endif
     @if ($variant === 'horizontal')
