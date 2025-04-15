@@ -26,6 +26,7 @@ class EventArchive extends Composer
                     'event_start_date_clause' => 'ASC',
                     'event_start_time_clause' => 'ASC'
                 ],
+                'meta_key' => 'date',
                 'meta_query' => [
                     'relation' => 'AND',
                     'event_start_date_clause' => [
@@ -35,6 +36,11 @@ class EventArchive extends Composer
                     'event_start_time_clause' => [
                         'key'     => 'start_time',
                         'compare' => 'EXISTS',
+                    ],
+                    'event_not_before_today_clause' => [
+                        'key'     => 'date',
+                        'value'   => date('Y-m-d'),
+                        'compare' => '>=',
                     ],
                 ],
             ];

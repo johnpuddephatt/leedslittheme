@@ -31,7 +31,7 @@ class App extends Composer
 
             'og' => [
                 'description' => get_the_excerpt() ?: get_bloginfo('description'),
-                'image' => get_the_post_thumbnail_url(get_the_ID(), 'large') ?: wp_get_attachment_image_src(get_field('social_media_image', 'options'), 'large')[0]
+                'image' => get_the_post_thumbnail_url(get_the_ID(), 'wide-xl') ?: wp_get_attachment_image_src(get_field('social_media_image', 'options'), 'large')[0]
             ],
         ];
     }
