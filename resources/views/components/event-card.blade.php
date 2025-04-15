@@ -11,24 +11,26 @@
           },
   ]) }}>
 
-  @if (has_post_thumbnail($event->ID, 'wide'))
-    <div
-      class="{{ match ($variant) {
-          'horizontal' => ' w-full md:w-1/3  ',
-          'large' => ' md:w-1/2  md:-ml-28 md:my-4 ',
-          default => ' w-full ',
-      } }} flex-none overflow-hidden">
-
+  <div
+    class="{{ match ($variant) {
+        'horizontal' => ' w-full md:w-1/3  ',
+        'large' => ' md:w-1/2  md:-ml-28 md:my-4 ',
+        default => ' w-full ',
+    } }} flex-none overflow-hidden">
+    @if (has_post_thumbnail($event->ID, 'wide'))
       {!! get_the_post_thumbnail($event->ID, 'wide', [
           'sizes' => '25vw',
           'class' => '  h-full w-full object-cover transition duration-1000 group-hover:scale-105',
       ]) !!}
-      @if ($variant === 'horizontal')
-        <x-button class="hidden md:block" :cover="true" :arrow="true" url="{{ get_permalink($event->ID) }}"
-          label="Find out more"></x-button>
-      @endif
-    </div>
-  @endif
+    @else
+      <div class="aspect-[2] h-full w-full bg-pink-light"></div>
+    @endif
+    @if ($variant === 'horizontal')
+      <x-button class="hidden md:block" :cover="true" :arrow="true" url="{{ get_permalink($event->ID) }}"
+        label="Find out more"></x-button>
+    @endif
+  </div>
+
   <div class="{{ $bg }} flex w-full flex-grow flex-col">
     <div
       class="{{ match ($variant) {
