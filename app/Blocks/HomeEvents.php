@@ -172,7 +172,7 @@ class HomeEvents extends Block
                 'relation' => 'AND',
                 [
                     'key' => 'featured',
-                    'value' => true,
+                    'value' => 1,
                     'compare' => '='
                 ],
                 [
@@ -193,9 +193,8 @@ class HomeEvents extends Block
                     'relation' => 'AND',
                     [
                         'key' => 'featured',
-                        'value' => false,
+                        'value' => 0,
                         'compare' => '=',
-                        'type' => 'boolean'
 
                     ],
                     [
