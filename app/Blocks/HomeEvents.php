@@ -166,7 +166,7 @@ class HomeEvents extends Block
     {
         $events = get_posts([
             'post_type' => 'event',
-            'orderby' => ['start_date' => 'ASC'],
+            'orderby' => ['date' => 'ASC'],
             'numberposts' => 4,
             'meta_query' => [
                 'relation' => 'AND',
@@ -187,7 +187,7 @@ class HomeEvents extends Block
         if (count($events) < 4) {
             $additional_events = get_posts([
                 'post_type' => 'event',
-                'orderby' => ['start_date' => 'ASC'],
+                'orderby' => ['date' => 'ASC'],
                 'numberposts' => 4 - count($events),
                 'meta_query' => [
                     'relation' => 'AND',
