@@ -166,7 +166,10 @@ class HomeEvents extends Block
     {
         $events = get_posts([
             'post_type' => 'event',
-            'orderby' => ['date' => 'ASC'],
+            'orderby' => [
+                'event_start_date_clause' => 'ASC',
+                'event_start_time_clause' => 'ASC'
+            ],
             'numberposts' => 4,
             'meta_query' => [
                 'relation' => 'AND',
@@ -176,10 +179,19 @@ class HomeEvents extends Block
                     'compare' => '='
                 ],
                 [
-                    'key' => 'date',
-                    'value' => date('Y-m-d'),
-                    'compare' => '>='
-                ]
+                    'key'     => 'date',
+                    'value'   => date('Y-m-d'),
+                    'compare' => '>=',
+                ],
+                'event_start_time_clause' => [
+                    'key'     => 'start_time',
+                    'compare' => 'EXISTS',
+                ],
+                'event_start_date_clause' => [
+                    'key'     => 'date',
+                    'compare' => 'EXISTS',
+                ],
+
             ],
             'meta_key' => 'date',
         ]);
@@ -187,21 +199,31 @@ class HomeEvents extends Block
         if (count($events) < 4) {
             $additional_events = get_posts([
                 'post_type' => 'event',
-                'orderby' => ['date' => 'ASC'],
+                'orderby' => [
+                    'event_start_date_clause' => 'ASC',
+                    'event_start_time_clause' => 'ASC'
+                ],
                 'numberposts' => 4 - count($events),
                 'meta_query' => [
                     'relation' => 'AND',
                     [
                         'key' => 'featured',
                         'value' => 0,
-                        'compare' => '=',
-
+                        'compare' => '='
                     ],
                     [
-                        'key' => 'date',
-                        'value' => date('Y-m-d'),
-                        'compare' => '>='
-                    ]
+                        'key'     => 'date',
+                        'value'   => date('Y-m-d'),
+                        'compare' => '>=',
+                    ],
+                    'event_start_time_clause' => [
+                        'key'     => 'start_time',
+                        'compare' => 'EXISTS',
+                    ],
+                    'event_start_date_clause' => [
+                        'key'     => 'date',
+                        'compare' => 'EXISTS',
+                    ],
                 ],
                 'meta_key' => 'date',
             ]);
