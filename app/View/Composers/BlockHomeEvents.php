@@ -19,13 +19,6 @@ class BlockHomeEvents extends Composer
 
     public function with()
     {
-        return [
-            'events' => get_posts([
-                'post_type' => 'event',
-                'orderby' => ['start_date' => 'ASC'],
-                'numberposts' => 4,
-                'page' => (int) get_query_var('paged')
-            ])
-        ];
+        return [];
     }
 }

@@ -164,9 +164,54 @@ class HomeEvents extends Block
      */
     public function with(): array
     {
+        $events = get_posts([
+            'post_type' => 'event',
+            'orderby' => ['start_date' => 'ASC'],
+            'numberposts' => 4,
+            'meta_query' => [
+                'relation' => 'AND',
+                [
+                    'key' => 'featured',
+                    'value' => true,
+                    'compare' => '='
+                ],
+                [
+                    'key' => 'date',
+                    'value' => date('Y-m-d'),
+                    'compare' => '>='
+                ]
+            ],
+            'meta_key' => 'date',
+        ]);
+
+        if (count($events) < 4) {
+            $additional_events = get_posts([
+                'post_type' => 'event',
+                'orderby' => ['start_date' => 'ASC'],
+                'numberposts' => 4 - count($events),
+                'meta_query' => [
+                    'relation' => 'AND',
+                    [
+                        'key' => 'featured',
+                        'value' => false,
+                        'compare' => '='
+                    ],
+                    [
+                        'key' => 'date',
+                        'value' => date('Y-m-d'),
+                        'compare' => '>='
+                    ]
+                ],
+                'meta_key' => 'date',
+            ]);
+        }
+
+        $events = array_merge($events, $additional_events ?? []);
+
         return [
             'heading' => get_field('heading'),
             'link' => get_field('link'),
+            'events' => $events
         ];
     }
 
