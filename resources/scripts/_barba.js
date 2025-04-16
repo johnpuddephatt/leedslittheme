@@ -15,25 +15,25 @@ export default function setupBarba() {
         '[data-barba="container"]',
       ).dataset.barbaClass; // copy new classes onto body class
 
-      document
-        .querySelector('meta[property="og:image"]')
-        .setAttribute(
-          'content',
-          document.querySelector('[data-barba="container"]').dataset.ogimage,
-        );
-      document
-        .querySelector('meta[property="og:title"]')
-        .setAttribute(
-          'content',
-          document.querySelector('[data-barba="container"]').dataset.ogtitle,
-        );
-      document
-        .querySelector('meta[property="og:description"]')
-        .setAttribute(
-          'content',
-          document.querySelector('[data-barba="container"]').dataset
-            .ogdescription,
-        );
+      // document
+      //   .querySelector('meta[property="og:image"]')
+      //   .setAttribute(
+      //     'content',
+      //     document.querySelector('[data-barba="container"]').dataset.ogimage,
+      //   );
+      // document
+      //   .querySelector('meta[property="og:title"]')
+      //   .setAttribute(
+      //     'content',
+      //     document.querySelector('[data-barba="container"]').dataset.ogtitle,
+      //   );
+      // document
+      //   .querySelector('meta[property="og:description"]')
+      //   .setAttribute(
+      //     'content',
+      //     document.querySelector('[data-barba="container"]').dataset
+      //       .ogdescription,
+      //   );
       // window.routes.loadEvents();
       // window.gtag('config', 'G-1XNVY0FD6J', {'page_path': window.location.pathname});
       // window.gtag('set', 'page', window.location.pathname);

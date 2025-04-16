@@ -11,6 +11,7 @@
     <meta property="og:title" content="{!! $title !!}" />
     <meta property="og:description" content="{!! $og['description'] !!}" />
     <meta property="og:image" content="{!! $og['image'] !!}" />
+    <meta name="twitter:card" content="summary_large_image" />
 
   </head>
 
@@ -32,9 +33,7 @@
 
       <head>
         <title>{!! $title !!}</title>
-        <meta property="og:title" content="{!! $title !!}" />
-        <meta property="og:description" content="{!! $og['description'] !!}" />
-        <meta property="og:image" content="{!! $og['image'] !!}" />
+
       </head>
 
       <body @php(body_class('bg-pink-light opacity-0'))>
@@ -43,8 +42,7 @@
 @include('partials.loading')
 
 <div data-barba-class="{{ join(' ', get_body_class('bg-pink-light transition duration-500')) }}" data-barba="container"
-  data-barba-namespace="{{ basename(get_permalink()) }}" data-ogimage="{{ $og['image'] }}"
-  data-ogtitle="{{ $title }}" data-ogdescription="{{ $og['description'] }}">
+  data-barba-namespace="{{ basename(get_permalink()) }}">
 
   <main id="main" class="main">
     @yield('content')
