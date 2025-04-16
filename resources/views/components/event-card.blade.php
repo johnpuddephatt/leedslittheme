@@ -19,7 +19,7 @@
     } }} flex-none overflow-hidden">
     @if (has_post_thumbnail($event->ID, 'wide'))
       {!! get_the_post_thumbnail($event->ID, 'wide', [
-          'sizes' => '25vw',
+          'sizes' => '(min-width: 768px) 40vw, 100vw',
           'class' => '  h-full w-full object-cover transition duration-1000 group-hover:scale-105',
       ]) !!}
     @else
