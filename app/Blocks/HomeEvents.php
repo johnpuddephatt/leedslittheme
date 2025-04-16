@@ -194,7 +194,9 @@ class HomeEvents extends Block
                     [
                         'key' => 'featured',
                         'value' => false,
-                        'compare' => '='
+                        'compare' => '=',
+                        'type' => 'boolean'
+
                     ],
                     [
                         'key' => 'date',
