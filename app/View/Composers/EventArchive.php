@@ -46,7 +46,25 @@ class EventArchive extends Composer
             ];
         } else {
             $sort = [
-                'orderby' => ['post_title' => 'ASC'],
+                'orderby' => [
+                    'event_featured_clause' => 'ASC',
+                    'post_title' => 'ASC'
+                ],
+                'meta_query' => [
+                    'relation' => 'OR',
+
+                    'event_featured_clause' => [
+                        'key'     => 'featured',
+                        'compare' => '=',
+                        'value'   => '1',
+                    ],
+                    'event_not_featured_clause' => [
+                        'key'     => 'featured',
+                        'compare' => '=',
+                        'value'   => '0',
+                    ]
+
+                ]
             ];
         };
 
