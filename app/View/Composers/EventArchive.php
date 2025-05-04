@@ -48,7 +48,7 @@ class EventArchive extends Composer
             $sort = [
                 'orderby' => [
                     'event_featured_clause' => 'ASC',
-                    'post_title' => 'ASC',
+                    // 'post_title' => 'ASC',
                 ],
                 'meta_query' => [
                     'relation' => 'OR',
