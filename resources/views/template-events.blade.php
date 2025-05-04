@@ -32,7 +32,7 @@
     @else
       <div class="mt-8 grid grid-cols-1 gap-8 md:mt-36 md:grid-cols-2 md:gap-x-12 md:gap-y-24 lg:grid-cols-3">
         @foreach ($events as $event)
-          <x-event-card :event="$event" />
+          <x-event-card :event="$event" :bg="get_field('featured', $event->ID) ? 'bg-pink bg-opacity-15' : null" />
         @endforeach
       </div>
     @endif
