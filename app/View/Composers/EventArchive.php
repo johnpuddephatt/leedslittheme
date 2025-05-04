@@ -56,12 +56,12 @@ class EventArchive extends Composer
                     'event_featured_clause' => [
                         'key'     => 'featured',
                         'compare' => '=',
-                        'value'   => '1',
+                        'value'   => 1,
                     ],
                     'event_not_featured_clause' => [
                         'key'     => 'featured',
                         'compare' => '=',
-                        'value'   => '0',
+                        'value'   => 0,
                     ]
 
                 ]
