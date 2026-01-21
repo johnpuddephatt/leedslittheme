@@ -1,4 +1,4 @@
-@props(['event', 'bg' => null, 'variant' => 'default', 'show_date' => true])
+@props(['event', 'bg' => null, 'variant' => 'default', 'show_date' => true, 'highlight' => false])
 
 <div
   {{ $attributes->merge([
@@ -36,7 +36,7 @@
   <div class="{{ $bg }} flex w-full flex-grow flex-col">
     <div
       class="{{ match ($variant) {
-          'large' => 'my-auto flex-grow flex flex-col justify-center md:pr-32 px-4 py-6 md:p-8 lg:p-12 text-black',
+          'large' => 'my-auto flex-grow flex flex-col justify-center md:pr-32 lg:pr-32 px-4 py-6 md:p-8 lg:p-12 text-black',
           'horizontal' => ' w-full md:w-auto',
           default => ' py-6 ',
       } }} {{ $bg ? 'px-4' : '' }}">
