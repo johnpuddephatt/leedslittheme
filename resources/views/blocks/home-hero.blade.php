@@ -15,8 +15,11 @@
   </div>
   <div id="content"
     class="relative flex flex-col items-center justify-center opacity-0 transition-opacity duration-[4000ms]">
-    <x-logo class="mb-12 w-24 md:w-40" />
+    <x-logo class="mb-8 w-24 md:w-40" />
 
+    @if ($preheading)
+      <div class="mb-4 lg:text-lg">{{ $preheading }}</div>
+    @endif
     <h1 class="text-center font-serif text-3xl md:text-4xl lg:text-5xl">
       {{ $heading }}
     </h1>

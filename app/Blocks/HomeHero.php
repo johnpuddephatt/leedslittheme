@@ -166,6 +166,7 @@ class HomeHero extends Block
     {
         return [
             'heading' => get_field('heading'),
+            'preheading' => get_field('preheading'),
             'link' => get_field('link'),
         ];
     }
@@ -177,6 +178,7 @@ class HomeHero extends Block
     {
         $fields = Builder::make('home_hero');
         $fields
+            ->addText('preheading')
             ->addText('heading')
             ->addLink('link');
         return $fields->build();
