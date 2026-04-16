@@ -20,7 +20,7 @@
     @if ($preheading)
       <div class="mb-4 lg:text-lg">{{ $preheading }}</div>
     @endif
-    <h1 class="text-center font-serif text-3xl md:text-4xl lg:text-5xl">
+    <h1 class="type-2xl text-center">
       {{ $heading }}
     </h1>
 

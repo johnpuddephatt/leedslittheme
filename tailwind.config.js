@@ -47,6 +47,14 @@ const config = {
         'Times',
         'serif',
       ],
+      heading: [
+        'LLF-heading',
+        'Avenir',
+        'Helvetica Neue',
+        'Helvetica',
+        'Arial',
+        'sans-serif',
+      ],
     },
     extend: {
       typography: (theme) => ({

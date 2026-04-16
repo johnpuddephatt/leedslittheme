@@ -52,7 +52,7 @@
         @endif
 
       </div>
-      <h2 class="{{ $variant == 'default' ? ' type-lg ' : ' type-lg md:type-xl ' }} mb-2 text-balance font-serif">
+      <h2 class="{{ $variant == 'default' ? ' type-lg ' : ' type-lg md:type-xl ' }} mb-2 text-balance">
         {!! $event->post_title !!}</h2>
       @if ($event->subtitle)
         <p class="type-sm mb-4">{!! $event->subtitle !!}</p>

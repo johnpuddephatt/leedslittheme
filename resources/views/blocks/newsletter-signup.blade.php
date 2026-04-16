@@ -1,7 +1,7 @@
 <div class="alignfull overflow-hidden bg-white py-24" x-data="newsletter">
   <div class="container grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-0">
     <div>
-      <h2 class="type-xl mb-4 mt-0 text-balance font-serif">{{ $heading }}</h2>
+      <h2 class="type-xl mb-4 mt-0 text-balance">{{ $heading }}</h2>
       <p>{{ $subheading }}</p>
 
       <form class="js-cm-form max-w-md pt-4" " id="subForm" action="https://www.createsend.com/t/subscribeerror?description="

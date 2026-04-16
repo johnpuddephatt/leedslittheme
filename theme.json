@@ -104,6 +104,11 @@
           "fontFamily": "LLF-serif,Georgia,Cambria,Times New Roman,Times,serif",
           "name": "LLF-serif",
           "slug": "serif"
+        },
+        {
+          "fontFamily": "LLF-heading,Avenir,Helvetica Neue,Helvetica,Arial,sans-serif",
+          "name": "LLF-heading",
+          "slug": "heading"
         }
       ],
       "fontSizes": [

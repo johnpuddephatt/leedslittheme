@@ -1,25 +1,25 @@
 @layer utilities {
   .type-2xl {
-    @apply font-serif text-6xl md:text-7xl 2xl:text-8xl  leading-tight 2xl:leading-none;
+    @apply font-heading text-6xl uppercase md:text-7xl 2xl:text-8xl  leading-tight 2xl:leading-none;
   }
 
   .type-xl {
-    @apply text-4xl 2xl:text-5xl leading-tight 2xl:leading-none;
+    @apply text-4xl 2xl:text-5xl font-bold leading-tight;
   }
 
   .type-lg {
-    @apply text-2xl  leading-snug;
+    @apply text-2xl font-bold leading-snug;
   }
 
   .type-md {
-    @apply text-xl  leading-snug;
+    @apply text-xl font-bold leading-snug;
   }
 
   .type-sm {
-    @apply text-lg  leading-snug;
+    @apply text-lg font-bold leading-snug;
   }
 
   .type-xs {
-    @apply leading-snug;
+    @apply text-sm font-bold leading-snug;
   }
 }
