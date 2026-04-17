@@ -7,7 +7,7 @@
 
     <a href="{{ get_permalink(get_option('page_for_events ')) }}" class="type-md">What’s On</a>
 
-    <h1 class="type-2xl skip-none my-4 w-full text-balance underline decoration-1 md:my-6 md:w-2/3 md:pl-8 md:-indent-8">
+    <h1 class="type-2xl my-4 w-full max-w-6xl text-balance md:my-6">
       {!! $event->post_title !!}</h1>
 
     @if ($event->subtitle)
