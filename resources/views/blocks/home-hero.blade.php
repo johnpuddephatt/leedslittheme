@@ -1,5 +1,4 @@
-<div x-data="homeHero"
-  class="alignfull not-prose relative flex h-[90vh] w-screen flex-col items-center justify-center">
+<div x-data="homeHero" class="alignfull not-prose relative flex h-[90vh] w-screen">
   <div class="absolute inset-0 -z-20 bg-blue"></div>
   <img src="{{ asset('images/bg.jpg') }} " id="fallback"
     class="fixed inset-0 -z-10 h-[90vh] w-screen object-cover opacity-0 transition-opacity delay-1000 duration-[3000ms]"
@@ -14,7 +13,7 @@
     class="bg-radial pointer-events-none absolute inset-0 z-20 from-transparent from-50% to-white/30 opacity-0 delay-1000 duration-[3000ms]">
   </div>
   <div id="content"
-    class="relative flex flex-col items-start justify-center opacity-0 transition-opacity duration-[4000ms]">
+    class="container relative flex flex-col items-start justify-center opacity-0 transition-opacity duration-[4000ms]">
     <x-logo class="mb-4 ml-auto w-24 md:mb-0 md:w-36" />
 
     @if ($preheading)
