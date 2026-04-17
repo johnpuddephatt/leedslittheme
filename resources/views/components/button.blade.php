@@ -2,7 +2,7 @@
 
 <a href="{{ $url }}"
   {{ $attributes->merge([
-      'class' => ($cover ? ' after:block after:absolute after:inset-0 ' : '') . ' not-prose  group',
+      'class' => ($cover ? ' after:block after:absolute after:inset-0 ' : '') . ' not-prose font-bold group',
   ]) }}>
 
   <div
