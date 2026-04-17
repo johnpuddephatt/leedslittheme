@@ -14,7 +14,7 @@
   </div>
   <div id="content"
     class="container relative flex flex-col items-start justify-center opacity-0 transition-opacity duration-[4000ms]">
-    <x-logo class="mb-4 ml-auto w-24 md:mb-0 md:w-36" />
+    <x-logo class="mb-4 ml-auto w-24 md:mb-0 md:w-32" />
 
     @if ($preheading)
       <div class="type-xl mb-4">{{ $preheading }}</div>
