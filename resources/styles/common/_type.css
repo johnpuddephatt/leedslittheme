@@ -4,7 +4,7 @@
   }
 
   .type-xl {
-    @apply text-4xl 2xl:text-5xl font-bold leading-tight;
+    @apply font-heading uppercase text-4xl 2xl:text-5xl font-bold !leading-none;
   }
 
   .type-lg {
