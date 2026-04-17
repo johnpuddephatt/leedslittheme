@@ -1,6 +1,6 @@
 @layer utilities {
   .type-2xl {
-    @apply font-heading text-4xl sm:text-5xl uppercase md:text-6xl xl:text-7xl 2xl:text-8xl  !leading-none;
+    @apply font-heading text-4xl sm:text-5xl uppercase md:text-6xl xl:text-7xl 2xl:text-8xl  !leading-[0.8];
   }
 
   .type-xl {

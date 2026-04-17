@@ -5,7 +5,7 @@
       "js/app.b0de11.js"
     ],
     "css": [
-      "css/app.e45ec7.css"
+      "css/app.b2eda4.css"
     ],
     "dependencies": []
   },
@@ -15,7 +15,7 @@
       "js/editor.eabed1.js"
     ],
     "css": [
-      "css/editor.9e1e9c.css"
+      "css/editor.634f9b.css"
     ],
     "dependencies": [
       "wp-data",

@@ -17,7 +17,7 @@
     <x-logo class="mb-4 ml-auto w-24 md:mb-0 md:w-32" />
 
     @if ($preheading)
-      <div class="type-xl mb-4">{{ $preheading }}</div>
+      <div class="type-xl mb-12">{{ $preheading }}</div>
     @endif
     <h1 class="type-2xl max-w-6xl text-white">
       {{ $heading }}
